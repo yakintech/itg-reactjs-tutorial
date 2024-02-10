@@ -1,5 +1,6 @@
 import React from 'react'
 import { suppliers } from '../data/suppliers'
+import { Link } from 'react-router-dom'
 
 
 function ObjectArraySample3() {
@@ -18,7 +19,7 @@ function ObjectArraySample3() {
                 suppliers.map(item => {
 
                     return <tr>
-                        <td>{item.id}</td>
+                        <td><Link to={'/suppliers/' + item.id}>{item.id}</Link></td>
                         <td>{item.companyName}</td>
                         <td>{item.contactName}</td>
                         <td>{item.address?.city}</td>

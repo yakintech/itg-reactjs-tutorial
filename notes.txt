@@ -6,3 +6,6 @@ https://www.w3schools.com/js/js_arrow_function.asp
 
 Destructuring
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment?retiredLocale=tr
+
+vscode shortcuts
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
