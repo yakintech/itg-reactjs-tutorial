@@ -1,10 +1,10 @@
-import ObjectArraySample2 from "./jsx/ObjectArraySample2";
+import ObjectArraySample3 from "./jsx/ObjectArraySample3";
 
 
 function App() {
 
   return <>
-  <ObjectArraySample2/>
+  <ObjectArraySample3/>
   </>
 
 
