@@ -5,9 +5,14 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ObjectArraySample3 from './jsx/ObjectArraySample3'
 import SupplierDetail from "./pages/SupplierDetail";
+import StateIntro from "./state/StateIntro";
+import StateRandomColor from "./state/StateRandomColor";
+import StateArraySample from "./state/StateArraySample";
 
 
 function App() {
+
+  return <StateArraySample/>
 
   return <>
     <h1>Site Header</h1>
@@ -16,6 +21,7 @@ function App() {
       <li><Link to='/about'>About</Link></li>
       <li><Link to='/contact'>Contact</Link></li>
       <li><Link to='/suppliers'>Suppliers</Link></li>
+      <li><Link to='/stateintro'>State Intro</Link></li>
     </ul>
 
     <Routes>
@@ -24,6 +30,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/suppliers" element={<ObjectArraySample3/>} />
       <Route path="/suppliers/:id" element={<SupplierDetail/>} />
+      <Route path="/stateintro" element={<StateIntro/>} />
       <Route path="*" element={<NotFound/>} />
     </Routes>
     <p>Site Footer</p>
@@ -33,6 +40,8 @@ function App() {
 }
 
 export default App;
+
+//props, state
 
 
 
