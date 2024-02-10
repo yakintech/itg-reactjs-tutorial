@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //x -> number, y -> number, z -> func
+    function calc(x, y, z) {
+        var result = x * y;
+        z(result)
+    }
+
+
+    calc(10, 20, print)
+
+    function print(data) {
+        //console.log(data)
+    }
+
+
+
+    let countries = ["Türkiye", "Almanya", "İran", "Rusya"]
+
+
+    countries.forEach(function(item){
+        console.log(item)
+    })
+
+    countries.forEach(() => {
+        console.log(item);
+    })
+
+
+    countries.map(item => {
+        console.log(item);
+    })
+
+
+  
+
+
+
+
+</script>
+
+</html>
