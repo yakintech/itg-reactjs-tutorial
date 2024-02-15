@@ -186,14 +186,7 @@ export const suppliers = [
         "companyName": "Exotic Liquids",
         "contactName": "Charlotte Cooper",
         "contactTitle": "Purchasing Manager",
-        "address": {
-            "street": "49 Gilbert St.",
-            "city": "London",
-            "region": "NULL",
-            "postalCode": "EC1 4SD",
-            "country": "UK",
-            "phone": "(171) 555-2222"
-        }
+
     },
     {
         "id": 3,

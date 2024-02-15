@@ -8,11 +8,13 @@ import SupplierDetail from "./pages/SupplierDetail";
 import StateIntro from "./state/StateIntro";
 import StateRandomColor from "./state/StateRandomColor";
 import StateArraySample from "./state/StateArraySample";
+import ProductsTable from "./state/ProductsTable";
+import StateRandomNumbers from "./state/StateRandomNumbers";
 
 
 function App() {
 
-  return <StateArraySample/>
+  return <ProductsTable/>
 
   return <>
     <h1>Site Header</h1>
