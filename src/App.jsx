@@ -15,11 +15,12 @@ import Categories from "./axiosSample/Categories";
 import ProductsPage from "./axiosSample/ProductsPage";
 import CustomerPage from "./axiosSample/CustomerPage";
 import AddProduct from "./axiosSample/AddProduct";
+import AddProduct2 from "./axiosSample/AddProduct2";
 
 
 function App() {
 
-  // return <AddProduct/>
+   return <AddProduct2/>
 
   return <>
     <h1>Site Header</h1>
