@@ -16,11 +16,14 @@ import ProductsPage from "./axiosSample/ProductsPage";
 import CustomerPage from "./axiosSample/CustomerPage";
 import AddProduct from "./axiosSample/AddProduct";
 import AddProduct2 from "./axiosSample/AddProduct2";
+import Intro from "./muiSample/Intro";
+import GridSample from "./components/GridSample";
+import ProductsDataGrid from "./muiSample/ProductsDataGrid";
 
 
 function App() {
 
-   return <AddProduct2/>
+   return <ProductsDataGrid/>
 
   return <>
     <h1>Site Header</h1>
