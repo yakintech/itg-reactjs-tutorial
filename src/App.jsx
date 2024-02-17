@@ -19,7 +19,7 @@ import AddProduct from "./axiosSample/AddProduct";
 
 function App() {
 
-  return <AddProduct/>
+  // return <AddProduct/>
 
   return <>
     <h1>Site Header</h1>

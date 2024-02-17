@@ -17,6 +17,10 @@ function Categories() {
                 console.log(err)
             })
 
+        return () => {
+            
+        }
+
     }, [])
 
 

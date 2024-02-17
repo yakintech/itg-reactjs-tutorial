@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { axiosInstance } from '../api/axiosInstance'
 
 function AddProduct() {
 
@@ -12,9 +13,17 @@ function AddProduct() {
             unitPrice: unitPrice
         }
 
-        axios.post("https://northwind.vercel.app/api/products", newProduct)
+        // axios.post("https://northwind.vercel.app/api/products", newProduct)
+        //     .then(res => {
+        //         alert("Success!")
+        //     })
+
+        axiosInstance.post("products", newProduct)
             .then(res => {
                 alert("Success!")
+            })
+            .catch(err => {
+                console.log('Error', err);
             })
 
     }
