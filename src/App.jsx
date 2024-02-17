@@ -10,11 +10,16 @@ import StateRandomColor from "./state/StateRandomColor";
 import StateArraySample from "./state/StateArraySample";
 import ProductsTable from "./state/ProductsTable";
 import StateRandomNumbers from "./state/StateRandomNumbers";
+import EffectSample from "./effectSample/EffectSample";
+import Categories from "./axiosSample/Categories";
+import ProductsPage from "./axiosSample/ProductsPage";
+import CustomerPage from "./axiosSample/CustomerPage";
+import AddProduct from "./axiosSample/AddProduct";
 
 
 function App() {
 
-  return <ProductsTable/>
+  return <AddProduct/>
 
   return <>
     <h1>Site Header</h1>
