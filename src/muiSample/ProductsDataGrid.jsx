@@ -8,13 +8,15 @@ function ProductsDataGrid() {
     const [products, setproducts] = useState([])
 
     useEffect(() => {
-
-        axios.get("https://northwind.vercel.app/api/products")
-            .then(res => {
-                setproducts(res.data)
-            })
-
+        loadProducts();
     }, [])
+
+    const loadProducts = () => {
+        axios.get("https://northwind.vercel.app/api/products")
+        .then(res => {
+            setproducts(res.data)
+        })
+    }
 
     const columns = [
         {
@@ -33,27 +35,37 @@ function ProductsDataGrid() {
             width: 300
         },
         {
-            field:"kdvPrice",
-            headerName:"KDV",
-            width:200,
+            field: "kdvPrice",
+            headerName: "KDV",
+            width: 200,
             renderCell: (params) => {
                 return <span>{(params.row.unitPrice * 0.2).toFixed(2)}</span>
             }
         },
         {
-            field:"Delete",
-            headerName:"Delete",
-            width:200,
+            field: "Delete",
+            headerName: "Delete",
+            width: 200,
             renderCell: (params) => {
-                return <Button variant='contained' color='error'>Delete</Button>
+                return <Button onClick={() => deleteProduct(params.row.id)} variant='contained' color='error'>Delete</Button>
             }
         }
     ]
 
 
+    const deleteProduct = (id) => {
+        // axios.delete("https://northwind.vercel.app/api/products/" + id)
+        axios.delete(`https://northwind.vercel.app/api/products/${id}`)
+            .then(res => {
+               loadProducts();
+            })
+
+    }
+
+
 
     return (<>
-        <div style={{height:400}}>
+        <div style={{ height: 400 }}>
             <DataGrid
                 rows={products}
                 columns={columns} />
