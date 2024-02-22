@@ -1,6 +1,6 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL: 'https://northwind.vercel.app/api/',
+    baseURL: process.env.REACT_APP_API_URL,
     timeout: 1000
   });

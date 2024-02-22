@@ -19,11 +19,14 @@ import AddProduct2 from "./axiosSample/AddProduct2";
 import Intro from "./muiSample/Intro";
 import GridSample from "./components/GridSample";
 import ProductsDataGrid from "./muiSample/ProductsDataGrid";
+import SuppliersTable from "./axiosSample/SuppliersTable";
+import Todos from "./react-query-sample/Todos";
+import CategoryPage from "./react-query-sample/CategoryPage";
+import AddCategoryPage from "./react-query-sample/AddCategoryPage";
 
 
 function App() {
 
-   return <ProductsDataGrid/>
 
   return <>
     <h1>Site Header</h1>
@@ -33,6 +36,8 @@ function App() {
       <li><Link to='/contact'>Contact</Link></li>
       <li><Link to='/suppliers'>Suppliers</Link></li>
       <li><Link to='/stateintro'>State Intro</Link></li>
+      <li><Link to='/categories'>Categories</Link></li>
+      <li><Link to='/addcategory'>Add Category</Link></li>
     </ul>
 
     <Routes>
@@ -42,6 +47,8 @@ function App() {
       <Route path="/suppliers" element={<ObjectArraySample3/>} />
       <Route path="/suppliers/:id" element={<SupplierDetail/>} />
       <Route path="/stateintro" element={<StateIntro/>} />
+      <Route path="/categories" element={<CategoryPage/>} />
+      <Route path="/addcategory" element={<AddCategoryPage/>} />
       <Route path="*" element={<NotFound/>} />
     </Routes>
     <p>Site Footer</p>
