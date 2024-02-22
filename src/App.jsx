@@ -23,10 +23,12 @@ import SuppliersTable from "./axiosSample/SuppliersTable";
 import Todos from "./react-query-sample/Todos";
 import CategoryPage from "./react-query-sample/CategoryPage";
 import AddCategoryPage from "./react-query-sample/AddCategoryPage";
+import Orders from "./axiosSample/Orders";
 
 
 function App() {
 
+  return <Orders/>
 
   return <>
     <h1>Site Header</h1>
