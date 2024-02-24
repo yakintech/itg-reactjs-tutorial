@@ -28,7 +28,6 @@ import Orders from "./axiosSample/Orders";
 
 function App() {
 
-  return <Orders/>
 
   return <>
     <h1>Site Header</h1>
