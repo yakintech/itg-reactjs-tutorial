@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { axiosInstance } from '../api/axiosInstance'
+import { FavoritesContext } from '../context/FavoritesContext'
 
 function ProductPage() {
   
     const [products, setproducts] = useState([])
+
+    const { addToFavorites } = useContext(FavoritesContext)
+    
 
     useEffect(() => {
         axiosInstance.get('/products')
@@ -32,7 +36,7 @@ function ProductPage() {
                     <td>{p.id}</td>
                     <td>{p.name}</td>
                     <td>{p.unitPrice}</td>
-                    <td><button>Add To Fav</button></td>
+                    <td><button onClick={() => addToFavorites(p)}>Add To Fav</button></td>
                 </tr>
             ))
         }

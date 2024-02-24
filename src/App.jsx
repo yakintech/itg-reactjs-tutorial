@@ -25,6 +25,7 @@ import CategoryPage from "./react-query-sample/CategoryPage";
 import AddCategoryPage from "./react-query-sample/AddCategoryPage";
 import Orders from "./axiosSample/Orders";
 import ProductPage from "./pages/ProductPage";
+import Favorites from "./pages/Favorites";
 
 
 function App() {
@@ -41,7 +42,7 @@ function App() {
       <li><Link to='/categories'>Categories</Link></li>
       <li><Link to='/addcategory'>Add Category</Link></li>
       <li><Link to='/products'>Products</Link></li>
-      
+      <li><Link to='/favorites'>Favorites</Link></li>
     </ul>
 
     <Routes>
@@ -54,6 +55,7 @@ function App() {
       <Route path="/categories" element={<CategoryPage/>} />
       <Route path="/addcategory" element={<AddCategoryPage/>} />
       <Route path="/products" element={<ProductPage/>} />
+      <Route path="/favorites" element={<Favorites/>} />
       <Route path="*" element={<NotFound/>} />
     </Routes>
     <p>Site Footer</p>
