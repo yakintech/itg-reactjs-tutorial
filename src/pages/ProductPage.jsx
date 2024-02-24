@@ -10,9 +10,34 @@ function ProductPage() {
             .then(response => {
                 setproducts(response.data)
             })
+            .catch(error => {
+                console.log(error)
+            })
     }, [])
 
   return (<>
+  <table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Unit Price</td>
+            <td>Add To Fav</td>
+        </tr>
+    </thead>
+    <tbody>
+        {
+            products.map(p => (
+                <tr key={p.id}>
+                    <td>{p.id}</td>
+                    <td>{p.name}</td>
+                    <td>{p.unitPrice}</td>
+                    <td><button>Add To Fav</button></td>
+                </tr>
+            ))
+        }
+    </tbody>
+  </table>
   </>
   )
 }

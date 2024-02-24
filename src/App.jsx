@@ -24,6 +24,7 @@ import Todos from "./react-query-sample/Todos";
 import CategoryPage from "./react-query-sample/CategoryPage";
 import AddCategoryPage from "./react-query-sample/AddCategoryPage";
 import Orders from "./axiosSample/Orders";
+import ProductPage from "./pages/ProductPage";
 
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
       <li><Link to='/stateintro'>State Intro</Link></li>
       <li><Link to='/categories'>Categories</Link></li>
       <li><Link to='/addcategory'>Add Category</Link></li>
+      <li><Link to='/products'>Products</Link></li>
+      
     </ul>
 
     <Routes>
@@ -50,6 +53,7 @@ function App() {
       <Route path="/stateintro" element={<StateIntro/>} />
       <Route path="/categories" element={<CategoryPage/>} />
       <Route path="/addcategory" element={<AddCategoryPage/>} />
+      <Route path="/products" element={<ProductPage/>} />
       <Route path="*" element={<NotFound/>} />
     </Routes>
     <p>Site Footer</p>
